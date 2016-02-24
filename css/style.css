@@ -17,7 +17,6 @@ body#zackdots {
   background-size: 3px, 100% auto;
   background-repeat: repeat, no-repeat;
   color: white;
-  min-width: 520px;
 }
 
 @media (min-width: 900px)
@@ -31,14 +30,6 @@ body#zackdots {
 {
   body#zackdots {
     background-size: 4px, 100% auto;
-  }
-}
-
-@media (max-width: 520px)
-{
-  body#zackdots {
-    background-size: 3px, 520px auto;
-    background-position: top, left top;
   }
 }
 
@@ -109,21 +100,18 @@ a.fontlink:hover, a.fontlink:active
   text-decoration: none;
 }
 
-/*
-.resumeicon
+@media (max-width: 520px)
 {
-  background:url(../images/resume-icon.png) no-repeat center right ;
-  background-size: 1.5rem auto;
-  display: inline-block;
-  width: 1.5rem;
-}
+  .mainheader h1
+  {
+    font-size: 6.1rem;
+  }
 
-a.fontlink:hover .resumeicon
-{
-  background:url(../images/resume-icon-hover.png) no-repeat center right;
-  background-size: 1.5rem auto;
+  .mainheader h2
+  {
+    font-size: 2.71rem;
+  }
 }
-*/
 
 
 /* Resume Page */
