@@ -113,6 +113,23 @@ a.fontlink:hover, a.fontlink:active
   }
 }
 
+@media (max-width: 400px)
+{
+  .mainheader h1
+  {
+    font-size: 5rem;
+  }
+
+  .mainheader h2
+  {
+    font-size: 2.2rem;
+  }
+body#zackdots
+  {
+    background-size: 2px, 100% auto;
+  }
+}
+
 
 /* Resume Page */
 
