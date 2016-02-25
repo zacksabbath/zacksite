@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+
+.resumecontainer
+{
+  display: flex;
+  flex-direction: row;
+
+  .white-side
+  {
+    width: 30%;
+    background-color: white;
+    height: 100%;
+  }
+
+  .black-side
+  {
+    width: 70%;
+    background-color: black;
+    height: 100%;
+  }
+}
+
+.resumetext
+{
+  font-family: "EB Garamond", serif;
+  background-color: black;
+  color:white;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 3.5rem;
+
+  p, li
+  {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  h1
+  {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  h2
+  {
+    font-size: 2.5rem;
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+
+  h3
+  {
+    font-size: 1.75rem;
+  }
+
+  h4
+  {
+    font-size: 1.2rem;
+  }
+
+  strong
+  {
+    font-weight: bold;
+    color: black;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 3px;
+  }
+
+  li, p
+  {
+    color: #ccc;
+  }
+
+  small
+  {
+    font-size: 50%;
+  }
+}
+
+.resumephoto
+{
+  text-align: right;
+  margin-top: 25%;
+  margin-bottom: auto;
+  padding-right: 1rem;
+
+  img
+  {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px)
+{
+  .resumecontainer
+  {
+    flex-direction: column;
+
+    .white-side, .black-side
+    {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .resumephoto
+  {
+    margin-top: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+
+    img
+    {
+      width: 40%;
+      height: auto;
+    }
+  }
+
+  .resumetext
+  {
+    padding: 1rem;
+  }
+}
