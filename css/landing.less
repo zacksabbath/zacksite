@@ -35,10 +35,24 @@ body {
     {
       margin-top: 5%;
       margin-left: 10%;
-      width: 40%;
+      width: 65%;
       min-width: 18.75rem;
     }
   }
+}
+
+ul.links {
+  a {
+    color: #aaa;
+  }
+}
+
+.blurb {
+  background: rgba(0, 0, 0, .5);
+  padding: 1rem;
+  border-radius: 5px;
+  position: relative;
+  left: -1rem;
 }
 
 .mainheader
@@ -81,7 +95,7 @@ a.landinglink
   text-decoration: none;
   padding: @landinglink-padding;
   border-radius: 20px;
-  transition: color 1s, background-color 1s;
+  transition: color .3s, background-color .3s;
   padding-top: 2 * @landinglink-padding;
 
   &:first-child
@@ -98,7 +112,7 @@ a.landinglink
 
   &.resumelink
   {
-    margin-left: 1em;
+    margin-left: .5rem;
   }
 }
 
