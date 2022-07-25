@@ -1,18 +1,16 @@
 @import "landing";
 @import "resume";
 
-.dotbackground(@dotsize)
-{
+@mixin dotbackground($dotsize) {
   background-color: black;
   background-image: url('../images/backgrounds/dot2.png'), url('../images/backgrounds/zacknodots.jpg');
   background-attachment: fixed, fixed;
   background-position: top, top;
   background-repeat: repeat, no-repeat;
-  background-size: @dotsize, 100% auto;
+  background-size: $dotsize, 100% auto;
 }
 
-.nospace
-{
+@mixin nospace {
   padding: 0;
   margin: 0;
 }
