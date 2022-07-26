@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Rokkitt);
+@import '../styles/mixins.module.scss';
 
-a
+.link
 {
+  color: #aaa;
+
   &:hover, &:visited, &:active, &:link
   {
     color: white;
@@ -14,36 +17,30 @@ a
   }
 }
 
-body {
+.zackdots {
+
   font-family: 'Rokkitt', serif;
   color: white;
 
-  &#zackdots {
-    @include dotbackground(3px);
+  @include dotbackground(3px);
 
-    @media (min-width: 750px) and (max-width:899px)
-    {
-      @include dotbackground(4px);
-    }
-
-    @media (min-width: 900px)
-    {
-      @include dotbackground(5px);
-    }
-
-    main
-    {
-      margin-top: 5%;
-      margin-left: 10%;
-      width: 65%;
-      min-width: 18.75rem;
-    }
+  @media (min-width: 750px) and (max-width:899px)
+  {
+    @include dotbackground(4px);
   }
-}
 
-ul.links {
-  a {
-    color: #aaa;
+  @media (min-width: 900px)
+  {
+    @include dotbackground(5px);
+  }
+
+
+  main
+  {
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 65%;
+    min-width: 18.75rem;
   }
 }
 
@@ -80,29 +77,35 @@ ul.links {
   }
 }
 
-p.info
+.info
 {
   line-height:120%;
   font-size: 1.3rem;
 }
 
-$landinglink-padding: .25rem;
-
-a.landinglink
+.landinglinks
 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.moveDown {
+  position: relative;
+  top: .5rem;
+}
+
+.landinglink
+{
+  margin: auto 0;
   font-size: 2rem;
   color: white;
   text-decoration: none;
-  padding: $landinglink-padding;
-  border-radius: 20px;
+  padding: .5rem;
+  border-radius: 4px;
   transition: color .3s, background-color .3s;
-  padding-top: 2 * $landinglink-padding;
+  cursor: pointer;
 
-  &:first-child
-  {
-    // this is to account for link padding
-    margin-left: $landinglink-padding * -1;
-  }
 
   &:hover, &:active
   {

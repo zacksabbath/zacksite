@@ -5,18 +5,29 @@
   display: flex;
   flex-direction: row;
 
-  .white-side
+  .whiteSide
   {
     width: 30%;
     background-color: white;
     height: 100%;
   }
 
-  .black-side
+  .blackSide
   {
     width: 70%;
     background-color: black;
     height: 100%;
+  }
+
+  @media (max-width: 767px)
+  {
+    flex-direction: column;
+
+    .white-side, .black-side
+    {
+      width: auto;
+      height: auto;
+    }
   }
 }
 
@@ -28,6 +39,14 @@
   padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 3.5rem;
+
+  @media (max-width: 767px)
+{
+
+    padding: 1rem;
+
+}
+
 
   p, li
   {
@@ -94,22 +113,8 @@
     width: 70%;
     height: auto;
   }
-}
 
-@media (max-width: 767px)
-{
-  .resumecontainer
-  {
-    flex-direction: column;
-
-    .white-side, .black-side
-    {
-      width: auto;
-      height: auto;
-    }
-  }
-
-  .resumephoto
+  @media (max-width: 767px)
   {
     margin-top: 0;
     padding-top: 3%;
@@ -122,9 +127,5 @@
       height: auto;
     }
   }
-
-  .resumetext
-  {
-    padding: 1rem;
-  }
 }
+
