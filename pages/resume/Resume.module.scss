@@ -9,7 +9,6 @@
   {
     width: 30%;
     background-color: white;
-    height: 100%;
   }
 
   .blackSide
@@ -23,10 +22,14 @@
   {
     flex-direction: column;
 
-    .white-side, .black-side
+    .whiteSide, .blackSide
     {
       width: auto;
       height: auto;
+    }
+
+    .whiteSide {
+      align-self: center;
     }
   }
 }
@@ -103,15 +106,16 @@
 
 .resumephoto
 {
-  text-align: right;
+  
   margin-top: 25%;
   margin-bottom: auto;
   padding-right: 1rem;
 
-  img
-  {
-    width: 70%;
-    height: auto;
+  .zackengineer {
+      padding-left: 20%;
+      height: auto;
+      display: flex;
+      justify-content: flex-end;
   }
 
   @media (max-width: 767px)
@@ -119,13 +123,14 @@
     margin-top: 0;
     padding-top: 3%;
     padding-bottom: 3%;
-    text-align: center;
 
-    img
-    {
+    .zackengineer {
       width: 40%;
-      height: auto;
+      padding: 0;
+      justify-content: center;
     }
+
+
   }
 }
 

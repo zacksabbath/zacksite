@@ -9,24 +9,21 @@ const Home: NextPage = () => (
       <article>
         <header className={styles.mainheader}>
           <h1>
-            Zack
+            <span className={styles.firstname}>Zack</span>
             <br />
-            Rose
+            <span className={styles.lastname}> Rose </span> 
           </h1>
           <h2>
-            Front-End
+            <span className={styles.frontend}> Front-End</span>
             <br />
-            <span className="jobtitle">Engineer</span>
+            <span className={styles.engineer}>Engineer</span>
           </h2>
         </header>
 
         <section className={styles.blurb}>
           <p className={styles.info}>
             Hello! and welcome. I am a front-end developer currently residing in
-            Portland, Oregon. I have a Computer Science degree from
-            <Link href="http://case.edu" target="blank">
-              Case Western Reserve University
-            </Link>
+            Portland, Oregon. I have a Computer Science degree from Case Western Reserve University
             and over 10 years experience working with websites. I have been
             using/loving React since 2015, and in the last couple years have
             migrated fully to Typescript. I love to solve creative problems and
@@ -48,63 +45,63 @@ const Home: NextPage = () => (
 
           <hr />
 
-          <p className={styles.info}>
+          {/* <p className={styles.info}>
             Some javascript libraries I use and love:
           </p>
           <ul>
             <li>
-              <Link
+              <a
                 className={styles.link}
                 href="https://styled-components.com/"
                 target="blank"
               >
                 Styled Components
-              </Link>{" "}
+              </a>{" "}
               - my personal favorite CSS-in-JS solution.
             </li>
             <li>
-              <Link
+              <a
                 className={styles.link}
                 href="https://react-query.tanstack.com/"
                 target="blank"
               >
                 React Query
-              </Link>{" "}
+              </a>{" "}
               - stripped down, powerful suite for interacting with APIs (GraphQL
               or REST).
             </li>
             <li>
-              <Link
+              <a
                 className={styles.link}
                 href="https://color2k.com/"
                 target="blank"
               >
                 Color2k
-              </Link>{" "}
+              </a>{" "}
               - great little color manipulation library.
             </li>
             <li>
-              <Link
+              <a
                 className={styles.link}
                 href="https://react-icons.github.io/react-icons/"
                 target="blank"
               >
                 React Icons
-              </Link>{" "}
+              </a>{" "}
               - lightweight, bundle-concious, consolidated collection of icons,
               featuring FontAwesome and others.
             </li>
             <li>
-              <Link
+              <a
                 className={styles.link}
                 href="https://www.npmjs.com/package/webpack-bundle-analyzer"
                 target="blank"
               >
                 Webpack Bundle Analyzer
-              </Link>{" "}
+              </a>{" "}
               - amazing tool for visualizing your Webpack bundle.
             </li>
-          </ul>
+          </ul> */}
 
           <div className={styles.landinglinks}>
             <Link

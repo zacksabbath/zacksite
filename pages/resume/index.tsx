@@ -8,10 +8,16 @@ const Resume: NextPage = () => (
     <div className={styles.whiteSide}>
       <div className={styles.resumephoto}>
         <Link href="/">
-          <Image
-            src="/images/zackengineer.png"
-            alt="Zack Rose - Front End Engineer"
-          />
+          <div className={styles.zackengineer}>
+            <Image
+              
+              src="/images/zackengineer.png"
+              alt="Zack Rose - Front End Engineer"
+              width={713}
+              height={829}
+              layout="intrinsic"
+              />
+          </div>
         </Link>
       </div>
     </div>

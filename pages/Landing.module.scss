@@ -37,7 +37,7 @@
 
   main
   {
-    margin-top: 5%;
+    margin-top: 0;
     margin-left: 10%;
     width: 65%;
     min-width: 18.75rem;
@@ -55,12 +55,21 @@
 .mainheader
 {
   text-transform: uppercase;
+  padding-top: 7%;
 
   h1
   {
     @include nospace;
     font-size: 8rem;
     line-height:70%;
+
+    .firstname {
+      letter-spacing: 0;
+    }
+
+    .lastname {
+      letter-spacing: 6px;
+    }
   }
   h2
   {
@@ -69,9 +78,13 @@
     line-height:70%;
     margin-bottom: 2.5rem;
 
-    .jobtitle
+    .frontend {
+      letter-spacing:2.5px;
+    }
+
+    .engineer
     {
-      letter-spacing:4.5px;
+      letter-spacing:8px;
     }
 
   }
