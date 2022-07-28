@@ -106,7 +106,6 @@
 
 .resumephoto
 {
-  
   margin-top: 25%;
   margin-bottom: auto;
   padding-right: 1rem;
@@ -114,20 +113,20 @@
   .zackengineer {
       padding-left: 20%;
       height: auto;
-      display: flex;
-      justify-content: flex-end;
   }
 
   @media (max-width: 767px)
   {
     margin-top: 0;
     padding-top: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 0;
+
+    display: flex;
+    justify-content: center;
 
     .zackengineer {
       width: 40%;
       padding: 0;
-      justify-content: center;
     }
 
 
