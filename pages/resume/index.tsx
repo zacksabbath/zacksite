@@ -9,19 +9,13 @@ const Resume: NextPage = () => (
       <div className={styles.resumephoto}>
         <Link href="/">
           <div className={styles.zackengineer}>
-            <div className={styles.imagewrapper}>
-
-              <p>
-              <Image
-                src="/images/zackengineer.png"
-                alt="Zack Rose - Front End Engineer"
-                width={713}
-                height={829}
-                layout="intrinsic"
-                />
-                            </p>
-            </div>
-
+            <Image
+              src="/images/zackengineer.png"
+              alt="Zack Rose - Front End Engineer"
+              width={713}
+              height={829}
+              layout="intrinsic"
+              />
           </div>
         </Link>
       </div>
@@ -29,9 +23,9 @@ const Resume: NextPage = () => (
     <div className={styles.blackSide}>
       <div className={styles.resumetext}>
         <h1>Resum&eacute;</h1>
-        <p className="text-xs-center">
+        {/* <p className="text-xs-center">
           <Link href="Resume-Zack_Rose-2018.pdf">(Download)</Link>
-        </p>
+        </p> */}
 
         <h2>Summary</h2>
         <p>
