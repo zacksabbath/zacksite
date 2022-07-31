@@ -39,24 +39,16 @@ const Resume: NextPage = () => (
 
         <h2>Skills</h2>
         <p>
-          <strong>Front-end:</strong> React, Redux, Webpack, ES6, Babel, Insula,
-          ESLint, Sass, CSS Modules
+          <strong>Front-end:</strong> Typescript, React, React Native, NextJS, Modern Javascript Syntax / ES6, CSS in JS, CSS Modules, Redux
         </p>
         <p>
-          <strong>Mobile:</strong> React Native, Android (Java / Kotlin)
+          <strong>Data:</strong> GraphQL, SQL, JSON
         </p>
         <p>
-          <strong>Back-end:</strong> Node.js, Express, Java, Clojure
+          <strong>Testing:</strong> Cypress, Jest, Enzyme, Selenium, Appium
         </p>
         <p>
-          <strong>Testing:</strong> Jest, Enzyme, Groovy, Geb, Selenium, Appium
-        </p>
-        <p>
-          <strong>Data:</strong> mySQL, PostgreSQL, Microsoft SQL Server,
-          Oracle, JSON, NoSQL, MongoDB
-        </p>
-        <p>
-          <strong>DevOps:</strong> Jenkins, AWS
+          <strong>DevOps:</strong> Vercel, Jenkins, Github, Gitlab, AWS
         </p>
 
         <h2>Experience</h2>
