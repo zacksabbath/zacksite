@@ -8,6 +8,7 @@ const Resume: NextPage = () => (
   <div className={styles.resumecontainer}>
     <Head>
       <title>Zack Rose - Resumé</title>
+      <meta name="description" content="Zack Rose Professional Resume" />
     </Head>
     <div className={styles.whiteSide}>
       <div className={styles.resumephoto}>

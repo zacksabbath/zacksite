@@ -8,6 +8,7 @@ const Home: NextPage = () => (
   <div className={styles.zackdots}>
     <Head>
       <title>Zack Rose - Front-End Engineer</title>
+      <meta name="description" content="Zack Rose Professional Website" />
     </Head>
     <main>
       <article>
