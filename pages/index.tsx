@@ -1,10 +1,14 @@
 import type { NextPage } from "next";
-import styles from "./Landing.module.scss";
 import Link from "next/link";
-import {FaLinkedin, FaEnvelope, FaGithub} from "react-icons/fa"
+import Head from "next/head";
+import { FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa"
+import styles from "./Landing.module.scss";
 
 const Home: NextPage = () => (
   <div className={styles.zackdots}>
+    <Head>
+      <title>Zack Rose - Front-End Engineer</title>
+    </Head>
     <main>
       <article>
         <header className={styles.mainheader}>

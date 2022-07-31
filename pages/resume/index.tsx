@@ -1,10 +1,14 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import styles from "./Resume.module.scss";
 
 const Resume: NextPage = () => (
   <div className={styles.resumecontainer}>
+    <Head>
+      <title>Zack Rose - Resumé</title>
+    </Head>
     <div className={styles.whiteSide}>
       <div className={styles.resumephoto}>
         <Link href="/">
@@ -55,6 +59,8 @@ const Resume: NextPage = () => (
         </p>
 
         <h2>Experience</h2>
+
+        <h3>...Under Construction!</h3>
 
         <h3>Craftsy</h3>
         <h4>
