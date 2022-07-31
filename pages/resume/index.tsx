@@ -1,10 +1,15 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import styles from "./Resume.module.scss";
 
 const Resume: NextPage = () => (
   <div className={styles.resumecontainer}>
+    <Head>
+      <title>Zack Rose - Resumé</title>
+      <meta name="description" content="Zack Rose Professional Resume" />
+    </Head>
     <div className={styles.whiteSide}>
       <div className={styles.resumephoto}>
         <Link href="/">
@@ -23,35 +28,13 @@ const Resume: NextPage = () => (
     <div className={styles.blackSide}>
       <div className={styles.resumetext}>
         <h1>Resum&eacute;</h1>
-        {/* <p className="text-xs-center">
-          <Link href="Resume-Zack_Rose-2018.pdf">(Download)</Link>
-        </p> */}
+        <div className={styles.download}>
+          <a href="https://drive.google.com/file/d/1kkH2QRGivjlGuY1IzQP7F-xg_vl9AXkk" target='_blank' rel="noopener noreferrer">(Download)</a>
+        </div>
 
         <h2>Summary</h2>
         <p>
-          Software engineer with 15+ years experience and a Computer Science
-          degree, seeking a front-end engineering position with an emphasis on
-          React and cutting edge technologies.
-        </p>
-
-        <h2>Education</h2>
-        <p>
-          <Link href="http://case.edu" target="_blank" rel="noreferrer">
-            Case Western Reserve University
-          </Link>
-          , Cleveland, Ohio <br />
-          BA in{" "}
-          <Link
-            href="http://engineering.case.edu/eecs/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Computer Science
-          </Link>
-          , May 2008
-          <br />
-          Minor: Music <br />
-          Sequences: French and Psychology
+        Software engineer with a Computer Science degree and over a decade experience working on web applications, specializing in React / React Native and component based development. 
         </p>
 
         <h2>Skills</h2>
@@ -77,6 +60,11 @@ const Resume: NextPage = () => (
         </p>
 
         <h2>Experience</h2>
+
+        <h3>Under Construction!</h3>
+        <h3>Thanks for your patience!</h3>
+
+        <h3><br /><br /><br /></h3>
 
         <h3>Craftsy</h3>
         <h4>
@@ -121,20 +109,12 @@ const Resume: NextPage = () => (
         <ul>
           <li>
             Worked on “Feed” project for the Rocky Mountain Farmer&apos;s Union
-            (
-            <Link href="http://feed.rmfu.org" target="blank">
-              http://feed.rmfu.org
-            </Link>
-            ) working alongside a small team of designers/developers. Built
+ working alongside a small team of designers/developers. Built
             static mockups into dynamic pages using Bootstrap, HTML5, CSS3, and
             ClojureScript, defining the look of the page.
           </li>
           <li>
-            Tech lead on full redesign of Code For Denver website (
-            <Link href="http://codefordenver.org" target="blank">
-              http://codefordenver.org
-            </Link>
-            ) using React.
+            Tech lead on full redesign of Code For Denver website using React.
           </li>
           <li>
             Helped beginner programmers get a head start in understanding the
@@ -277,7 +257,30 @@ const Resume: NextPage = () => (
             introduce first year students to campus.
           </li>
         </ul>
+
+        <h2>Education</h2>
+        <p>
+          <Link href="http://case.edu" target="_blank" rel="noreferrer">
+            Case Western Reserve University
+          </Link>
+          , Cleveland, Ohio <br />
+          BA in{" "}
+          <Link
+            href="http://engineering.case.edu/eecs/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Computer Science
+          </Link>
+          , May 2008
+          <br />
+          Minor: Music <br />
+          Sequences: French and Psychology
+        </p>
+
       </div>
+
+
     </div>
   </div>
 );

@@ -1,10 +1,15 @@
 import type { NextPage } from "next";
-import styles from "./Landing.module.scss";
 import Link from "next/link";
-import {FaLinkedin, FaEnvelope, FaGithub} from "react-icons/fa"
+import Head from "next/head";
+import { FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa"
+import styles from "./Landing.module.scss";
 
 const Home: NextPage = () => (
   <div className={styles.zackdots}>
+    <Head>
+      <title>Zack Rose - Front-End Engineer</title>
+      <meta name="description" content="Zack Rose Professional Website" />
+    </Head>
     <main>
       <article>
         <header className={styles.mainheader}>
@@ -26,7 +31,7 @@ const Home: NextPage = () => (
             Portland, Oregon. I have a Computer Science degree from Case Western Reserve University
             and over 10 years experience working with websites. I have been
             using/loving React since 2015, and in the last couple years have
-            migrated fully to Typescript. I love to solve creative problems and
+            migrated fully to Typescript and NextJS. I love to solve creative problems and
             help software grow.
           </p>
 
@@ -105,7 +110,7 @@ const Home: NextPage = () => (
 
           <div className={styles.landinglinks}>
             <Link
-              href="https://www.linkedin.com/in/zachary-rose-b7898a88"
+              href="https://www.linkedin.com/in/zack-rose/"
               target="blank"
             >
               <span className={styles.landinglink}>
