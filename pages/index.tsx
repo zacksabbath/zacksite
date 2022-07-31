@@ -105,7 +105,7 @@ const Home: NextPage = () => (
 
           <div className={styles.landinglinks}>
             <Link
-              href="https://www.linkedin.com/in/zachary-rose-b7898a88"
+              href="https://www.linkedin.com/in/zack-rose/"
               target="blank"
             >
               <span className={styles.landinglink}>
