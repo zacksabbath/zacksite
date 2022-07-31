@@ -23,35 +23,13 @@ const Resume: NextPage = () => (
     <div className={styles.blackSide}>
       <div className={styles.resumetext}>
         <h1>Resum&eacute;</h1>
-        {/* <p className="text-xs-center">
-          <Link href="Resume-Zack_Rose-2018.pdf">(Download)</Link>
-        </p> */}
+        <div className={styles.download}>
+          <Link href="https://drive.google.com/file/d/1kkH2QRGivjlGuY1IzQP7F-xg_vl9AXkk">(Download)</Link>
+        </div>
 
         <h2>Summary</h2>
         <p>
-          Software engineer with 15+ years experience and a Computer Science
-          degree, seeking a front-end engineering position with an emphasis on
-          React and cutting edge technologies.
-        </p>
-
-        <h2>Education</h2>
-        <p>
-          <Link href="http://case.edu" target="_blank" rel="noreferrer">
-            Case Western Reserve University
-          </Link>
-          , Cleveland, Ohio <br />
-          BA in{" "}
-          <Link
-            href="http://engineering.case.edu/eecs/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Computer Science
-          </Link>
-          , May 2008
-          <br />
-          Minor: Music <br />
-          Sequences: French and Psychology
+        Software engineer with a Computer Science degree and over a decade experience working on web applications, specializing in React / React Native and component based development. 
         </p>
 
         <h2>Skills</h2>
@@ -277,7 +255,30 @@ const Resume: NextPage = () => (
             introduce first year students to campus.
           </li>
         </ul>
+
+        <h2>Education</h2>
+        <p>
+          <Link href="http://case.edu" target="_blank" rel="noreferrer">
+            Case Western Reserve University
+          </Link>
+          , Cleveland, Ohio <br />
+          BA in{" "}
+          <Link
+            href="http://engineering.case.edu/eecs/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Computer Science
+          </Link>
+          , May 2008
+          <br />
+          Minor: Music <br />
+          Sequences: French and Psychology
+        </p>
+
       </div>
+
+
     </div>
   </div>
 );
