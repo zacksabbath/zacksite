@@ -30,7 +30,7 @@ const Home: NextPage = () => (
             Portland, Oregon. I have a Computer Science degree from Case Western Reserve University
             and over 10 years experience working with websites. I have been
             using/loving React since 2015, and in the last couple years have
-            migrated fully to Typescript. I love to solve creative problems and
+            migrated fully to Typescript and NextJS. I love to solve creative problems and
             help software grow.
           </p>
 
