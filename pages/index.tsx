@@ -122,7 +122,7 @@ const Home: NextPage = () => (
               </span>
             </Link>
             <Link
-              href="mailto:contact@zackrose.net"
+              href="mailto:contactweb@zackrose.net"
             >
               <span className={styles.landinglink}>
                 <FaEnvelope className={styles.moveDown} />
