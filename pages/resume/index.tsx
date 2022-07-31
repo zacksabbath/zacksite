@@ -29,7 +29,7 @@ const Resume: NextPage = () => (
       <div className={styles.resumetext}>
         <h1>Resum&eacute;</h1>
         <div className={styles.download}>
-          <Link href="https://drive.google.com/file/d/1kkH2QRGivjlGuY1IzQP7F-xg_vl9AXkk">(Download)</Link>
+          <Link href="https://drive.google.com/file/d/1kkH2QRGivjlGuY1IzQP7F-xg_vl9AXkk" target='_blank'>(Download)</Link>
         </div>
 
         <h2>Summary</h2>
