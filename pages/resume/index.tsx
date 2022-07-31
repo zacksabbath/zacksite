@@ -29,7 +29,7 @@ const Resume: NextPage = () => (
       <div className={styles.resumetext}>
         <h1>Resum&eacute;</h1>
         <div className={styles.download}>
-          <Link href="https://drive.google.com/file/d/1kkH2QRGivjlGuY1IzQP7F-xg_vl9AXkk" target='_blank'>(Download)</Link>
+          <a href="https://drive.google.com/file/d/1kkH2QRGivjlGuY1IzQP7F-xg_vl9AXkk" target='_blank' rel="noopener noreferrer">(Download)</a>
         </div>
 
         <h2>Summary</h2>
@@ -61,7 +61,10 @@ const Resume: NextPage = () => (
 
         <h2>Experience</h2>
 
-        <h3>...Under Construction!</h3>
+        <h3>Under Construction!</h3>
+        <h3>Thanks for your patience!</h3>
+
+        <h3><br /><br /><br /></h3>
 
         <h3>Craftsy</h3>
         <h4>
@@ -106,20 +109,12 @@ const Resume: NextPage = () => (
         <ul>
           <li>
             Worked on “Feed” project for the Rocky Mountain Farmer&apos;s Union
-            (
-            <Link href="http://feed.rmfu.org" target="blank">
-              http://feed.rmfu.org
-            </Link>
-            ) working alongside a small team of designers/developers. Built
+ working alongside a small team of designers/developers. Built
             static mockups into dynamic pages using Bootstrap, HTML5, CSS3, and
             ClojureScript, defining the look of the page.
           </li>
           <li>
-            Tech lead on full redesign of Code For Denver website (
-            <Link href="http://codefordenver.org" target="blank">
-              http://codefordenver.org
-            </Link>
-            ) using React.
+            Tech lead on full redesign of Code For Denver website using React.
           </li>
           <li>
             Helped beginner programmers get a head start in understanding the
